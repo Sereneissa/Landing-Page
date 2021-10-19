@@ -24,6 +24,7 @@ const dynamicMenu = () => {
   return;
 };
 
+
 /* Clear active class from all links */
 
 const removeActiveClasses = (links) => {
