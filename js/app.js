@@ -94,15 +94,6 @@ window.addEventListener("scroll", () => {
     console.log(section.id, ">> sectionTop = ", sectionTop);
     console.log("current location ", scrollY);
 
-    // scrollY is how much we have scrolled in the page
-    // I added a + 80 (height of the navbar) to offset the navbar
-    // because on larger windows and safari (smh safari) even if you scrolled all the way down
-    // contact us wouldnt be selected 
-
-    // If that didn't make any sense - sorry lmao remove the + 80
-    // open it on safari and try to scroll all the way down and I promise 
-    // it'll make sense
-
     if ((scrollY + 80) >= sectionTop) {
       currentSection = section.getAttribute("id");
     }
